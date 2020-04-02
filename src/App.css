@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+
+body {
+  margin: 30px;
+  background-color: #202821;
+}
+form {
+  margin-bottom: 50px;
+}
+
+.weatherInfo {
+  text-transform: uppercase;
+}
+.parent {
+  text-align: center;
+}
+
+
+
+a {
+  text-decoration: none;
+  color:#202821;
+}
+
+.searchPage {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+}

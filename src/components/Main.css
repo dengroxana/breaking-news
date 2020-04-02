@@ -1,0 +1,35 @@
+.thumbnail {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 1;
+  margin-top: -300px;
+  margin-left: -150px;
+  box-shadow: 5px 5px 5px gray;
+}
+.mainPage {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 150px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.articleContainer {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #EDEAEB;
+  position: relative;
+  
+}
+.mainTitle {
+ 
+  font-family: 'Fira Sans', sans-serif;
+  padding: 100px 10px 0 10px;
+}
+
+.mainTitle:hover {
+  text-transform: uppercase;
+}
