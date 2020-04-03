@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.singleArticle {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 50px;
+}
+p {
+    font-family: 'Fira Sans', sans-serif;
+   
+}
+.singleDes {
+    padding: 200px 10px 10px 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.readLink {
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    color: #476FA0;
+    padding: 50px 20px;
+    text-shadow: 2px 2px 8px #EDEAEB;
+}
+
+.singleHeader {
+    width: 800px;
+}
+
+.singleContainer {
+   
+    background-color: #EDEAEB;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    width: 720px;
+    height: auto;
+    margin-top: 150px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+
+}
+
+.singleImg {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -400px;
+  margin-left: -250px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+
