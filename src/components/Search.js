@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, withRouter } from "react-router-dom";
 import "./Search.css"
+import SearchIcon from "./search-icon.png"
 import SearchResults from "./SearchResults";
 import axios from "axios";
 import SingleArticle from "./SingleArticle";
@@ -36,12 +37,12 @@ class Search extends Component {
     return (
       <>
         <form>
-          <input className="inputField"
+          <input className="inputField" placeholder="Search Articles"
             type="text"
             value={this.state.value}
             onChange={this.handleChange}
           />
-          <button type="submit" value="Submit" onClick={this.handleSubmit}><b>Search</b></button>
+          <button type="submit" value="Submit" onClick={this.handleSubmit}><img className="searchIcon" src={SearchIcon} alt=""/></button>
         </form>
 
         <Route
