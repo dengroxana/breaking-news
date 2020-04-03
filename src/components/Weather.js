@@ -13,7 +13,7 @@ class Weather extends Component {
   componentDidMount = async () => {
     const api_key = "03625bde42ecc32076867b4990e7db1b";
     const response = await axios(
-      `http://api.openweathermap.org/data/2.5/weather?id=5128638&units=imperial&appid=${api_key}`
+      `https://api.openweathermap.org/data/2.5/weather?id=5128638&units=imperial&appid=${api_key}`
     );
     this.setState({
       city: response.data.name,
