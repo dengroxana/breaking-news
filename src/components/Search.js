@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route, withRouter } from "react-router-dom";
+import "./Search.css"
 import SearchResults from "./SearchResults";
 import axios from "axios";
 import SingleArticle from "./SingleArticle";
@@ -35,12 +36,12 @@ class Search extends Component {
     return (
       <>
         <form>
-          <input
+          <input className="inputField"
             type="text"
             value={this.state.value}
             onChange={this.handleChange}
           />
-          <input type="submit" value="Submit" onClick={this.handleSubmit} />
+          <button type="submit" value="Submit" onClick={this.handleSubmit}><b>Search</b></button>
         </form>
 
         <Route

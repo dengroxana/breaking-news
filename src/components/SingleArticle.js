@@ -21,15 +21,16 @@ articles: ""
   
   render() {
       return(
-      <>
-      {this.state.articles && <h1 className="singleTitle">{this.state.articles.title}</h1>}
+      <div className="singleArticle">
+        <div className="singleHeader">
+      {this.state.articles && <h1 className="singleTitle">{this.state.articles.title}</h1>}</div>
       <div className="singleContainer">
       <p className="singleDes">{this.state.articles.description}</p>
       <img src={this.state.articles.urlToImage} alt="" className="singleImg"/>
       <p>{this.state.articles.content}</p>
       <a className="readLink" href={this.state.articles.url} target={`_blank`}>Read More</a>
       </div>
-      </>
+      </div>
       )
   }
 }
