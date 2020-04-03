@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-
 header {
-    background-color: #63717B;
-    overflow: hidden;
+    
+height: 300px;
+  	background-image:
+     url('https://coverfiles.alphacoders.com/556/55691.jpg');
+  	
+	background-size: cover;
+  	background-position: top;
+  	position: relative;
+overflow: hidden;
+  	clip-path: polygon(0 0, 100% 0, 100% 150px, 0 100%);
 }
 
 .pageTitle {
-    text-align: center;
+    text-align: left;
+    padding: 20px 0 0 50px;
     font-family: 'Courgette', cursive;
     font-size: 40px;
     color: #EDEAEB;
