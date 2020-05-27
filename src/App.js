@@ -23,6 +23,7 @@ class App extends Component {
 
     const response = await axios(
       `https://newsapi.org/v2/top-headlines?country=us&${api_key}`
+    
     );
     this.setState({ articles: response.data.articles });
   };

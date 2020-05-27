@@ -16,6 +16,10 @@
     "react-scripts": "3.4.1",
     "storybook-react-router": "^1.0.8"
   },
+  "headers": {
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
