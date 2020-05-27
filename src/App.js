@@ -9,21 +9,24 @@ import Weather from "./components/Weather";
 import axios from "axios";
 import "./App.css";
 
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      articles: []
+      articles: [],
     };
   }
 
   componentDidMount = async () => {
     const api_key = "apiKey=29faf22ca3d14f958eb0920d1c110549";
-
+    const header = {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+      },
+    };
     const response = await axios(
-      `https://newsapi.org/v2/top-headlines?country=us&${api_key}`
-    
+      `https://newsapi.org/v2/top-headlines?country=us&${api_key}`, header
     );
     this.setState({ articles: response.data.articles });
   };
@@ -33,24 +36,22 @@ class App extends Component {
       <div className="parent">
         <Header />
         <Weather />
-        <Search/>
+        <Search />
         <Route
-          render={routerProps => (
+          render={(routerProps) => (
             <Main articles={this.state.articles} {...routerProps} />
           )}
           path="/"
           exact
         />
         <Route
-          render={routerProps => (
+          render={(routerProps) => (
             <SingleArticle articles={this.state.articles} {...routerProps} />
           )}
           path="/article/:publishedAt"
           exact
         />
-       
-         
-        
+
         <Footer />
       </div>
     );
