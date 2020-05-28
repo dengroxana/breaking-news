@@ -19,14 +19,9 @@ class App extends Component {
 
   componentDidMount = async () => {
     const api_key = "apiKey=29faf22ca3d14f958eb0920d1c110549";
-    const header = {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json",
-      },
-    };
+  
     const response = await axios(
-      `https://newsapi.org/v2/top-headlines?country=us&${api_key}`, header
+      `https://newsapi.org/v2/top-headlines?country=us&${api_key}`
     );
     this.setState({ articles: response.data.articles });
   };
