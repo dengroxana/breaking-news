@@ -2,6 +2,7 @@
   "name": "breaking-news",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://newsapi.org/v2/top-headlines?country=us&apiKey=29faf22ca3d14f958eb0920d1c110549",
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@testing-library/jest-dom": "^4.2.4",
