@@ -2,6 +2,7 @@
   "name": "breaking-news",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://breaking-news.netlify.app",
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@testing-library/jest-dom": "^4.2.4",
