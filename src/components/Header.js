@@ -6,7 +6,7 @@ import "./Header.css"
 function Header() {
   return (
   <header><nav>
-    <Link to="/"><h1 className="pageTitle">New York Live</h1></Link>
+    <Link to="/"><h1 className="pageTitle">Breaking News</h1></Link>
   </nav>
   
   </header>
