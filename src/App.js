@@ -22,7 +22,7 @@ class App extends Component {
   
     
     const response = await axios(
-      `https://newsapi.org/v2/top-headlines?country=us&${api_key}`
+      `https://newsapi.org/v2/top-headlines?country=us&${api_key}`, {mode:'no-cors'}
     );
     this.setState({ articles: response.data.articles });
   };
