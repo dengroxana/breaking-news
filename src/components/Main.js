@@ -20,7 +20,7 @@ class Main extends Component {
       <div className="mainPage">
         {this.props.articles.map((i, idx) => (
           <div className="articleContainer" key={idx}>
-            <Link to={`/article/${i.publishedAt}`} key={i.id} exact>
+            <Link to={`/article/${i.publishedAt}`} key={i.id}>
               <h4 className="mainTitle" >{i.title}</h4>
             </Link>
             <img src={i.urlToImage} alt="" className="thumbnail"/>
