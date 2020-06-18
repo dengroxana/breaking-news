@@ -4,6 +4,12 @@
 
 <br>
 
+**UPDATE**: As of May 2020 the News API is only free for development purposes, therefore CORS is only enabled for localhost.
+[Production Link](https://breaking-news.netlify.app/)
+
+
+<br>
+
 ### Overview
 
 _**Breaking News** is going to be an outlet for the top trending headlines across multiple sources. Featuring a blog-like format, it will display the top news in the country. There will also be an option to search for articles using specific keywords._
