@@ -13,16 +13,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      error: null,
+      isLoaded: false,
       articles: [],
     };
   }
 
   componentDidMount = async () => {
-    const api_key = "apiKey=29faf22ca3d14f958eb0920d1c110549";
-  
-    
     const response = await axios(
-      `https://newsapi.org/v2/top-headlines?country=us&${api_key}`, {mode:'no-cors'}
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=29faf22ca3d14f958eb0920d1c110549`
     );
     this.setState({ articles: response.data.articles });
   };

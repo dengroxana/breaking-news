@@ -24,6 +24,8 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
+  "proxy": "https://breaking-news.netlify.app",
+  
   "eslintConfig": {
     "extends": "react-app"
   },
